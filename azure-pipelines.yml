@@ -17,7 +17,7 @@ steps:
     mavenVersionOption: 'Path'
     mavenDirectory: 'C:\Program Files\Maven\apache-maven-3.8.6'
     mavenSetM2Home: false
-    mavenOptions: '-Xmx3072m'
+    mavenOptions: '-Xmx512m'
     mavenAuthenticateFeed: false
     sonarQubeRunAnalysis: false
 

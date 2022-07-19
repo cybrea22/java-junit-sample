@@ -7,7 +7,7 @@
 pool: 12
 
 steps:
-- task: Maven@3
+- task: Maven@2
   inputs:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
@@ -19,7 +19,6 @@ steps:
     mavenSetM2Home: false
     mavenOptions: '-Xmx3072m'
     mavenAuthenticateFeed: false
-    effectivePomSkip: false
     sonarQubeRunAnalysis: false
 
 - task: PublishTestResults@2

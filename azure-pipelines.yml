@@ -7,19 +7,16 @@
 pool: 12
 
 steps:
-- task: Maven@2
+- task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
-    mavenVersionOption: 'Path'
-    mavenDirectory: 'C:\Program Files\Maven\apache-maven-3.8.6'
-    mavenSetM2Home: false
-    mavenOptions: '-Xmx512m'
-    mavenAuthenticateFeed: false
-    sonarQubeRunAnalysis: false
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
 
 - task: PublishTestResults@2
   inputs:

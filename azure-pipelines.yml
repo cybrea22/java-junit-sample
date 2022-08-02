@@ -7,7 +7,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  agentName: SuseEnt15x64_VSTS8_b
+  agentName: OpenSuse15_VSTS2_m
   poolName: 12
 
 jobs: 

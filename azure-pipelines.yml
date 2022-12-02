@@ -10,7 +10,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   agentName: OracleLin7_4
-  poolName: Default
+  poolName: 12
 
 jobs: 
   - job: 'Job'

@@ -3,6 +3,9 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
+# !!! Need maven version > 3.0.5, i.e. 3.6.3 is working !!!
+
+
 trigger: none
 
 variables:
